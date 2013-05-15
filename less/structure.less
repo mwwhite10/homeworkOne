@@ -1,0 +1,49 @@
+* {
+	margin-top: 0;
+}
+
+body {
+	.custom-grad();
+}
+
+#container {
+	position: relative;
+	max-width: @contentWidth;
+	width: 90%;
+	margin: 0 auto;
+}
+
+h1 {
+	color: @h1Color;
+}
+
+#content{
+	width: 40%;
+	margin: 0 auto;
+	padding-top: 30px;
+	color: white;
+	font-size: 14px;
+
+	p{
+		padding-bottom: 5px;
+		line-height: 20px;
+		font-family: Arial;
+	}
+
+	img {
+		width: 70%;
+		border: solid;
+		border-color: black;
+		border-width: 10px;
+		border-radius: 10px;
+		margin: 0 auto;
+		margin-left: 12%;
+	}
+}
+
+@media only screen and (max-device-width : @smallSmartPhone), only screen and (max-width : @smallSmartPhone){
+	#content{
+
+		width: 80%;
+	}
+}

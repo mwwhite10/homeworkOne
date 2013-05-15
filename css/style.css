@@ -1,0 +1,159 @@
+.clearFix {
+  *zoom: 1;
+}
+.clearFix:before,
+.clearFix:after {
+  content: "";
+  clear: both;
+  display: block;
+  line-height: 0;
+}
+/*---------------------------------------------------
+    LESS Elements 0.9
+  ---------------------------------------------------
+    A set of useful LESS mixins
+    More info at: http://lesselements.com
+  ---------------------------------------------------*/
+* {
+  margin-top: 0;
+}
+body {
+  background: #4c4c4c;
+  /* Old browsers */
+
+  background: -moz-radial-gradient(center, ellipse cover, #4c4c4c 0%, #666666 0%, #2b2b2b 56%, #1c1c1c 71%, #131313 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #4c4c4c), color-stop(0%, #666666), color-stop(56%, #2b2b2b), color-stop(71%, #1c1c1c), color-stop(100%, #131313));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-radial-gradient(center, circle closest-side, #4c4c4c 0%, #666666 0%, #2b2b2b 56%, #1c1c1c 71%, #131313 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-radial-gradient(center, ellipse cover, #4c4c4c 0%, #666666 0%, #2b2b2b 56%, #1c1c1c 71%, #131313 100%);
+  /* Opera 12+ */
+
+  background: -ms-radial-gradient(center, ellipse cover, #4c4c4c 0%, #666666 0%, #2b2b2b 56%, #1c1c1c 71%, #131313 100%);
+  /* IE10+ */
+
+  background: radial-gradient(circle farthest-corner, #2b2b2b 56%, #1c1c1c 71%, #131313 100%);
+  /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c4c4c', endColorstr='#131313', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+
+}
+#container {
+  position: relative;
+  max-width: 960px;
+  width: 90%;
+  margin: 0 auto;
+}
+h1 {
+  color: #ffffff;
+}
+#content {
+  width: 40%;
+  margin: 0 auto;
+  padding-top: 30px;
+  color: white;
+  font-size: 14px;
+}
+#content p {
+  padding-bottom: 5px;
+  line-height: 20px;
+  font-family: Arial;
+}
+#content img {
+  width: 70%;
+  border: solid;
+  border-color: black;
+  border-width: 10px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-left: 12%;
+}
+@media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
+  #content {
+    width: 80%;
+  }
+}
+header {
+  position: relative;
+  height: 150px;
+}
+header h1 {
+  position: relative;
+  top: 30px;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 48px;
+  font-family: Helvetica;
+  text-shadow: 10px 10px 10px #000;
+}
+@media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
+  header {
+    height: 100px;
+  }
+  header h1 {
+    font-size: 24px;
+  }
+}
+nav {
+  padding: 10px;
+  width: 30%;
+  margin: 0 auto;
+  padding-left: 60px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  background-color: #34363c;
+  text-align: center;
+  padding: 10px;
+  -webkit-border: 10px 3px;
+  -webkit-border-radius: 10px 3px;
+  -moz-border-radius: 10px 3px;
+  border-radius: 10px 3px;
+  border: solid;
+  border-color: black;
+  font-family: Helvetica;
+}
+nav a:hover {
+  color: white;
+}
+nav a:visited {
+  color: white;
+}
+@media only screen and (max-device-width: 980px), only screen and (max-width: 980px) {
+  nav {
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+    padding-left: 5px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 5px;
+    background-color: #000000;
+    text-align: center;
+    padding: 5px;
+    -webkit-border: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    border-color: white;
+    font-size: 12px;
+    font-family: Helvetica;
+  }
+  nav a:hover {
+    color: white;
+  }
+  nav a:visited {
+    color: white;
+  }
+}
